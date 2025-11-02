@@ -1,3 +1,43 @@
+/* index.css */
+
+/* Подключаем базовые стили Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Дополнительные глобальные стили (опционально) */
+html, body {
+  @apply bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100;
+  @apply font-sans;
+  margin: 0;
+  padding: 0;
+}
+
+/* Плавные переходы для всех кнопок и элементов */
+button {
+  @apply transition-transform duration-200 ease-in-out;
+}
+
+/* Стили для контейнеров карточек */
+.card {
+  @apply bg-white rounded-3xl shadow-xl p-6;
+}
+
+/* Анимации обратной связи */
+.feedback-correct {
+  @apply text-green-500 font-bold text-lg;
+}
+
+.feedback-wrong {
+  @apply text-red-500 font-bold text-lg;
+}
+
+/* Прогресс-бар */
+.progress-bar {
+  @apply h-4 bg-green-400 rounded-full transition-all duration-500;
+}
+
+/* Сетка калькулятора */
+.calc-grid {
+  @apply grid grid-cols-3 gap-4;
+}
