@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# чтобы маршруты React (например /training, /stats) не ломались при обновлении страницы
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
